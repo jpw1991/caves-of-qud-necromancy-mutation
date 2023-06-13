@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<mutations>
+  <category Name="Mental">
+    <mutation Name="Reanimate" Cost="1" MaxSelected="1" Class="ChebGonaz_Reanimate" Exclusions="" Code="ea"></mutation>
+ </category>
+</mutations>
+
