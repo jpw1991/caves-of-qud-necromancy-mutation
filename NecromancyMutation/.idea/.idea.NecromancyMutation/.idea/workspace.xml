@@ -4,11 +4,28 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="45a80f00-e307-4275-b6ea-8ad43e3e31b1" name="Changes" comment="" />
+    <list default="true" id="45a80f00-e307-4275-b6ea-8ad43e3e31b1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NecromancyMutation.sln" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Mutations.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/NecromancyMutation.csproj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Properties/AssemblyInfo.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Reanimate.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JSON File" />
+      </list>
+    </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/33/d27807bc/Burgeoning.cs" root0="SKIP_HIGHLIGHTING" />
@@ -20,26 +37,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/home/joshua/.steam/steam/steamapps/common/Caves of Qud/CoQ_Data/Managed/Assembly-CSharp.dll",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/joshua/.steam/steam/steamapps/common/Caves of Qud/CoQ_Data/Managed/Assembly-CSharp.dll&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "/home/joshua/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache",
-      "/home/joshua/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache",
-      "/home/joshua/.local/share/Symbols/src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;/home/joshua/.config/JetBrains/Rider2023.1/resharper-host/DecompilerCache&quot;,
+      &quot;/home/joshua/.config/JetBrains/Rider2023.1/resharper-host/SourcesCache&quot;,
+      &quot;/home/joshua/.local/share/Symbols/src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -49,6 +66,8 @@
       <option name="presentableId" value="Default" />
       <updated>1686655886198</updated>
       <workItem from="1686655887226" duration="2791000" />
+      <workItem from="1686658911527" duration="1327000" />
+      <workItem from="1686833151943" duration="1225000" />
     </task>
     <servers />
   </component>

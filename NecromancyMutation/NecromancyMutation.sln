@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NecromancyMutation", "NecromancyMutation\NecromancyMutation.csproj", "{8CBF3DAB-7D5A-439F-936E-C55129487B28}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NecromancyMutation", "NecromancyMutation.csproj", "{8CBF3DAB-7D5A-439F-936E-C55129487B28}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

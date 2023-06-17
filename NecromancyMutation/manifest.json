@@ -1,0 +1,10 @@
+{
+  "id": "Necromancy Mutation",
+  "loadorder": 1,
+  "title": "Necromancy Mutation",
+  "description": "Adds a mutation called Reanimate that will cause a corpse to get up as an ally.",
+  "tags": "Necromancy,Cheb,Gonaz",
+  "version": "0.0.1",
+  "author": "Cheb Gonaz",
+  "previewImage": "preview.png"
+}
