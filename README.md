@@ -39,6 +39,7 @@ Use the `install.sh` script.
 	+ `manifest.json`
 	+ `ChebGonaz_Reanimate.cs`
 	+ `Mutations.xml`
+	+ `workshop.json`
 
 
 A correct installation looks like:
@@ -48,7 +49,8 @@ Freehold Games/CavesOfQud/Mods
 └── ChebsNecromancyMutation
     ├── ChebGonaz_Reanimate.cs
     ├── Mutations.xml
-    └── manifest.json
+    ├── manifest.json
+    └── workshop.json
 ```
 
 ## Changelog
