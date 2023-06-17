@@ -326,7 +326,7 @@ namespace XRL.World.Parts.Mutation
             var cell = PickDestinationCell(8, AllowVis.OnlyVisible);
 
             // check if corpse is at cell
-            var corpse = "";
+            GameObject corpse = null;
             foreach (var objectInCell in cell.GetObjects())
             {
                 if (objectInCell.IsAlive) continue;
@@ -334,18 +334,18 @@ namespace XRL.World.Parts.Mutation
                 if (last.EndsWith("corpse", ignoreCase: true, CultureInfo.CurrentCulture))
                 {
                     // dead thing found
-                    corpse = objectInCell.Blueprint;
+                    corpse = objectInCell;
                     break;
                 }
             }
 
-            if (corpse == "")
+            if (corpse == null)
             {
                 Popup.Show("There are no valid targets in that square.");
                 return false;
             }
 
-            var blueprint = GetBlueprintFromCorpse(corpse);
+            var blueprint = GetBlueprintFromCorpse(corpse.Blueprint);
             if (blueprint == "")
             {
                 Popup.Show($"Failed to determine creature from {corpse}.");
@@ -374,6 +374,9 @@ namespace XRL.World.Parts.Mutation
             cell.AddObject(go);
 
             UseEnergy(100, EnergyType);
+
+            corpse.Destroy();
+            
             return true;
         }
 

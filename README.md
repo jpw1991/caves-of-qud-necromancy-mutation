@@ -26,6 +26,11 @@ a) Create an issue on my [GitHub](https://github.com/jpw1991/caves-of-qud-necrom
 
 b) Write to me on [Discord](https://discord.com/invite/EB96ASQ).
 
+## Links
+
+- [Nexus Mods](https://www.nexusmods.com/cavesofqud/mods/17/)
+- [Steam Workshop](https://steamcommunity.com/sharedfiles/filedetails/?id=2990597917)
+
 ## Installation (manual)
 
 ### Linux
@@ -40,7 +45,6 @@ Use the `install.sh` script.
 	+ `ChebGonaz_Reanimate.cs`
 	+ `Mutations.xml`
 	+ `workshop.json`
-
 
 A correct installation looks like:
 
@@ -60,6 +64,7 @@ Freehold Games/CavesOfQud/Mods
 
  Date | Version | Notes 
 --- | --- | ---
+17/06/2023 | 0.0.2 | Fix bug where corpse wasn't consumed after creating the minion
 17/06/2023 | 0.0.1 | Initial release
 
 </details>
