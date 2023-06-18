@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="45a80f00-e307-4275-b6ea-8ad43e3e31b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ChebGonaz_Reanimate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChebGonaz_Reanimate.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NecromancyMutation.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ObjectBlueprints.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ObjectBlueprints.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../create_undead_creatures_xml.py" beforeDir="false" afterPath="$PROJECT_DIR$/../create_undead_creatures_xml.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +68,7 @@
       <workItem from="1686658911527" duration="1327000" />
       <workItem from="1686833151943" duration="1225000" />
       <workItem from="1686987637864" duration="7711000" />
-      <workItem from="1687055356447" duration="7808000" />
+      <workItem from="1687055356447" duration="8146000" />
     </task>
     <servers />
   </component>

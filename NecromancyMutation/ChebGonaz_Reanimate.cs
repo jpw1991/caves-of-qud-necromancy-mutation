@@ -158,7 +158,6 @@ namespace XRL.World.Parts.Mutation
             var go = GameObject.create(CorpseDictionary[corpse.Blueprint]);
             if (go.pBrain != null)
             {
-                go.DisplayName = $"Undead {go.DisplayName}";
                 if (ParentObject.IsPlayer())
                     go.IsTrifling = true;
                 go.pBrain.SetFeeling(ParentObject, 100);
