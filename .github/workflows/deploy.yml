@@ -26,24 +26,20 @@ jobs:
         zip -r ChebsNecromancyMutation.zip ChebsNecromancyMutation
 
     - name: Create a Release
-      uses: actions/create-release@v1
+      uses: elgohr/Github-Release-Action@v4
       env:
         GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
       with:
         tag_name: ${{ github.ref }}
-        release_name: Release ${{ github.ref }}
+        release_name: ${{ github.ref }}
         body: |
           Release ${{ github.ref }}
         draft: false
         prerelease: false
 
     - name: Upload Release Asset
-      uses: actions/upload-release-asset@v1
-      env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
-      with:
-        upload_url: ${{ steps.create_release.outputs.upload_url }}
-        asset_path: ./ChebsNecromancyMutation.zip
-        asset_name: ChebsNecromancyMutation.zip
-        asset_content_type: application/zip
+        uses: softprops/action-gh-release@v1
+        if: startsWith(github.ref, 'refs/tags/')
+        with:
+          files: ChebsNecromancyMutation.zip
 
