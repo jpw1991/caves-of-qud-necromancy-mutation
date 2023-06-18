@@ -1,0 +1,49 @@
+name: Publish Release
+on:
+  push:
+    tags:
+      - 'v*'
+
+env:
+  jsonf: NecromancyMutation/manifest.json
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v3
+
+    - name: Create Zip file
+      run: |
+        mkdir ChebsNecromancyMutation
+        cp NecromancyMutation/Mutations.xml ChebsNecromancyMutation
+        cp NecromancyMutation/ChebGonaz_Reanimate.cs ChebsNecromancyMutation
+        cp NecromancyMutation/manifest.json ChebsNecromancyMutation
+        cp NecromancyMutation/preview.png ChebsNecromancyMutation
+        cp NecromancyMutation/workshop.json ChebsNecromancyMutation
+        cp NecromancyMutation/ObjectBlueprints.xml ChebsNecromancyMutation
+        zip -r ChebsNecromancyMutation.zip ChebsNecromancyMutation
+
+    - name: Create a Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: Release ${{ github.ref }}
+        body: |
+          Release ${{ github.ref }}
+        draft: false
+        prerelease: false
+
+    - name: Upload Release Asset
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.RELEASE_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./ChebsNecromancyMutation.zip
+        asset_name: ChebsNecromancyMutation.zip
+        asset_content_type: application/zip
+
