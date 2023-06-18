@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using XRL.UI;
@@ -11,6 +12,102 @@ namespace XRL.World.Parts.Mutation
         public const string Command = "CommandReanimate";
         public const string Class = "Mental Mutation";
         public const string EnergyType = "Mental Mutation Reanimate";
+
+        private readonly Dictionary<string, string> CorpseDictionary = new Dictionary<string, string>()
+        {
+            { "Human Corpse", "ChebGonaz Undead Templar" },
+            { "Bat Corpse", "ChebGonaz Undead Bat" },
+            { "Pig Corpse", "ChebGonaz Undead Pig" },
+            { "Boar Corpse", "ChebGonaz Undead Boar" },
+            { "Cave Spider Corpse", "ChebGonaz Undead Cave Spider" },
+            { "Ray Cat Corpse", "ChebGonaz Undead Ray Cat" },
+            { "Croc Corpse", "ChebGonaz Undead Croc" },
+            { "Dog Corpse", "ChebGonaz Undead Dog" },
+            { "Electrofuge Corpse", "ChebGonaz Undead Electrofuge" },
+            { "Giant Beetle Corpse", "ChebGonaz Undead Giant Beetle" },
+            { "Giant Centipede Corpse", "ChebGonaz Undead Giant Centipede" },
+            { "Giant Dragonfly Corpse", "ChebGonaz Undead GiantDragonfly" },
+            { "Glowfish Corpse", "ChebGonaz Undead Glowfish" },
+            { "Goat Corpse", "ChebGonaz Undead Goat" },
+            { "Horned Chameleon Corpse", "ChebGonaz Undead Horned Chameleon" },
+            { "Qudzu Stem", "ChebGonaz Undead Qudzu" },
+            { "Salamander Corpse", "ChebGonaz Undead Salamander" },
+            { "Scorpiock Corpse", "ChebGonaz Undead Scorpiock" },
+            { "Snapjaw Corpse", "ChebGonaz Undead Snapjaw" },
+            { "Chute Crab Corpse", "ChebGonaz Undead Chute Crab" },
+            { "Eyeless Crab Corpse", "ChebGonaz Undead Eyeless Crab" },
+            { "Lahbloom", "ChebGonaz Undead Feral Lah" },
+            { "Girshling Corpse", "ChebGonaz Undead Girshling" },
+            { "Glowmoth Corpse", "ChebGonaz Undead Glowmoth" },
+            { "Knollworm Corpse", "ChebGonaz Undead Knollworm" },
+            { "Leech Corpse", "ChebGonaz Undead Leech" },
+            { "Salthopper Corpse", "ChebGonaz Undead Salthopper" },
+            { "Seedsprout Worm Corpse", "ChebGonaz Undead Seedsprout Worm" },
+            { "Earthworm Corpse", "ChebGonaz Undead Worm of the Earth" },
+            { "Naphtaali Corpse", "ChebGonaz Undead Naphtaali" },
+            { "Hindren Corpse", "ChebGonaz Undead BaseHindren" },
+            { "Albino ape corpse", "ChebGonaz Undead Albino ape" },
+            { "Barkbiter Corpse", "ChebGonaz Undead Barkbiter" },
+            { "Chitinous Puma Corpse", "ChebGonaz Undead Chitinous Puma" },
+            { "Dawnglider Corpse", "ChebGonaz Undead Dawnglider" },
+            { "Equimax Corpse", "ChebGonaz Undead Equimax" },
+            { "Fire ant corpse", "ChebGonaz Undead Fire ant" },
+            { "Fire Snout Corpse", "ChebGonaz Undead Fire Snout" },
+            { "Ghost Perch Corpse", "ChebGonaz Undead Ghost Perch" },
+            { "Ice frog corpse", "ChebGonaz Undead Ice frog" },
+            { "quillipede corpse", "ChebGonaz Undead Quillipede" },
+            { "Rustacean Corpse", "ChebGonaz Undead Rustacean" },
+            { "Spark Tick Corpse", "ChebGonaz Undead Spark Tick" },
+            { "Voider Corpse", "ChebGonaz Undead Voider" },
+            { "Goatfolk Corpse", "ChebGonaz Undead Goatfolk" },
+            { "Electric Snail Corpse", "ChebGonaz Undead Electric Snail" },
+            { "Eyeless King Crab Corpse", "ChebGonaz Undead Eyeless King Crab" },
+            { "BaseBreatherCorpse", "ChebGonaz Undead BaseBreather" },
+            { "FireBreatherCorpse", "ChebGonaz Undead FireBreather" },
+            { "IceBreatherCorpse", "ChebGonaz Undead IceBreather" },
+            { "CorrosiveBreatherCorpse", "ChebGonaz Undead CorrosiveBreather" },
+            { "NormalityBreatherCorpse", "ChebGonaz Undead NormalityBreather" },
+            { "PoisonBreatherCorpse", "ChebGonaz Undead PoisonBreather" },
+            { "SleepBreatherCorpse", "ChebGonaz Undead SleepBreather" },
+            { "StunBreatherCorpse", "ChebGonaz Undead StunBreather" },
+            { "ConfusionBreatherCorpse", "ChebGonaz Undead ConfusionBreather" },
+            { "Troll Corpse", "ChebGonaz Undead Troll" },
+            { "Agolzvuv Corpse", "ChebGonaz Undead Agolzvuv" },
+            { "Bloated Pearlfrog Corpse", "ChebGonaz Undead Bloated Pearlfrog" },
+            { "Gibbon Corpse", "ChebGonaz Undead Cyclopean Gibbon" },
+            { "Mimic Corpse", "ChebGonaz Undead Mimic" },
+            { "Molting Basilisk Husk", "ChebGonaz Undead Molting Basilisk" },
+            { "Quartz Baboon Corpse", "ChebGonaz Undead Quartz Baboon" },
+            { "Snailmother Corpse", "ChebGonaz Undead Snailmother" },
+            { "Urchin Belcher Corpse", "ChebGonaz Undead Urchin Belcher" },
+            { "Bone Worm Corpse", "ChebGonaz Undead Bone Worm" },
+            { "Amaranthine Ashes", "ChebGonaz Undead Goatfolk Qlippoth" },
+            { "Greater Voider Corpse", "ChebGonaz Undead Greater Voider" },
+            { "Madpole Corpse", "ChebGonaz Undead Madpole" },
+            { "Ogre ape corpse", "ChebGonaz Undead Ogre Ape" },
+            { "Rhinox Corpse", "ChebGonaz Undead Rhinox" },
+            { "BaseElderBreatherCorpse", "ChebGonaz Undead BaseElderBreather" },
+            { "ElderFireBreatherCorpse", "ChebGonaz Undead ElderFireBreather" },
+            { "ElderIceBreatherCorpse", "ChebGonaz Undead ElderIceBreather" },
+            { "ElderCorrosiveBreatherCorpse", "ChebGonaz Undead ElderCorrosiveBreather" },
+            { "ElderNormalityBreatherCorpse", "ChebGonaz Undead ElderNormalityBreather" },
+            { "ElderPoisonBreatherCorpse", "ChebGonaz Undead ElderPoisonBreather" },
+            { "ElderSleepBreatherCorpse", "ChebGonaz Undead ElderSleepBreather" },
+            { "ElderStunBreatherCorpse", "ChebGonaz Undead ElderStunBreather" },
+            { "ElderConfusionBreatherCorpse", "ChebGonaz Undead ElderConfusionBreather" },
+            { "Enigma Snail Corpse", "ChebGonaz Undead Enigma Snail" },
+            { "Great Saltback Corpse", "ChebGonaz Undead Great Saltback" },
+            { "Kaleidoslug Corpse", "ChebGonaz Undead Kaleidoslug" },
+            { "Memory Eater Corpse", "ChebGonaz Undead Memory Eater" },
+            { "Sultan Croc Corpse", "ChebGonaz Undead Sultan Croc" },
+            { "Svardym Corpse", "ChebGonaz Undead Svardym" },
+            { "Saltwurm Corpse", "ChebGonaz Undead Saltwurm" },
+            { "Unimax Corpse", "ChebGonaz Undead Unimax" },
+            { "Urshiib Corpse", "ChebGonaz Undead Urshiib" },
+            { "Dromad Corpse", "ChebGonaz Undead Dromad" },
+            { "SlogCorpse", "ChebGonaz Undead GolgothaSlog" },
+            { "Biomech Corpse", "ChebGonaz Undead BaseBiomech" },
+        };
 
         public ChebGonaz_Reanimate()
         {
@@ -30,295 +127,6 @@ namespace XRL.World.Parts.Mutation
         public override string GetLevelText(int level)
         {
             return $"level text {level}";
-        }
-
-        private string GetBlueprintFromCorpse(string corpseBlueprint)
-        {
-            // there's no link between a corpse and what it was before, from what I can tell, so let's hardcode them
-            // all
-            string result = "";
-
-            switch (corpseBlueprint)
-            {
-                case "Human Corpse":
-                    result = "Templar";
-                    break;
-                case "Bat Corpse":
-                    result = "Bat";
-                    break;
-                case "Pig Corpse":
-                    result = "Pig";
-                    break;
-                case "Boar Corpse":
-                    result = "Boar";
-                    break;
-                case "Cave Spider Corpse":
-                    result = "Cave Spider";
-                    break;
-                case "Ray Cat Corpse":
-                    result = "Ray Cat";
-                    break;
-                case "Croc Corpse":
-                    result = "Croc";
-                    break;
-                case "Dog Corpse":
-                    result = "Dog";
-                    break;
-                case "Electrofuge Corpse":
-                    result = "Electrofuge";
-                    break;
-                case "Giant Beetle Corpse":
-                    result = "Giant Beetle";
-                    break;
-                case "Giant Centipede Corpse":
-                    result = "Giant Centipede";
-                    break;
-                case "Giant Dragonfly Corpse":
-                    result = "GiantDragonfly";
-                    break;
-                case "Glowfish Corpse":
-                    result = "Glowfish";
-                    break;
-                case "Goat Corpse":
-                    result = "Goat";
-                    break;
-                case "Horned Chameleon Corpse":
-                    result = "Horned Chameleon";
-                    break;
-                case "Qudzu Stem":
-                    result = "Qudzu";
-                    break;
-                case "Salamander Corpse":
-                    result = "Salamander";
-                    break;
-                case "Scorpiock Corpse":
-                    result = "Scorpiock";
-                    break;
-                case "Snapjaw Corpse":
-                    result = "Snapjaw";
-                    break;
-                case "Chute Crab Corpse":
-                    result = "Chute Crab";
-                    break;
-                case "Eyeless Crab Corpse":
-                    result = "Eyeless Crab";
-                    break;
-                case "Lahbloom":
-                    result = "Feral Lah";
-                    break;
-                case "Girshling Corpse":
-                    result = "Girshling";
-                    break;
-                case "Glowmoth Corpse":
-                    result = "Glowmoth";
-                    break;
-                case "Knollworm Corpse":
-                    result = "Knollworm";
-                    break;
-                case "Leech Corpse":
-                    result = "Leech";
-                    break;
-                case "Salthopper Corpse":
-                    result = "Salthopper";
-                    break;
-                case "Seedsprout Worm Corpse":
-                    result = "Seedsprout Worm";
-                    break;
-                case "Earthworm Corpse":
-                    result = "Worm of the Earth";
-                    break;
-                case "Naphtaali Corpse":
-                    result = "Naphtaali";
-                    break;
-                case "Hindren Corpse":
-                    result = "BaseHindren";
-                    break;
-                case "Albino ape corpse":
-                    result = "Albino ape";
-                    break;
-                case "Barkbiter Corpse":
-                    result = "Barkbiter";
-                    break;
-                case "Chitinous Puma Corpse":
-                    result = "Chitinous Puma";
-                    break;
-                case "Dawnglider Corpse":
-                    result = "Dawnglider";
-                    break;
-                case "Equimax Corpse":
-                    result = "Equimax";
-                    break;
-                case "Fire ant corpse":
-                    result = "Fire ant";
-                    break;
-                case "Fire Snout Corpse":
-                    result = "Fire Snout";
-                    break;
-                case "Ghost Perch Corpse":
-                    result = "Ghost Perch";
-                    break;
-                case "Ice frog corpse":
-                    result = "Ice frog";
-                    break;
-                case "quillipede corpse":
-                    result = "Quillipede";
-                    break;
-                case "Rustacean Corpse":
-                    result = "Rustacean";
-                    break;
-                case "Spark Tick Corpse":
-                    result = "Spark Tick";
-                    break;
-                case "Voider Corpse":
-                    result = "Voider";
-                    break;
-                case "Goatfolk Corpse":
-                    result = "Goatfolk";
-                    break;
-                case "Electric Snail Corpse":
-                    result = "Electric Snail";
-                    break;
-                case "Eyeless King Crab Corpse":
-                    result = "Eyeless King Crab";
-                    break;
-                case "BaseBreatherCorpse":
-                    result = "BaseBreather";
-                    break;
-                case "FireBreatherCorpse":
-                    result = "FireBreather";
-                    break;
-                case "IceBreatherCorpse":
-                    result = "IceBreather";
-                    break;
-                case "CorrosiveBreatherCorpse":
-                    result = "CorrosiveBreather";
-                    break;
-                case "NormalityBreatherCorpse":
-                    result = "NormalityBreather";
-                    break;
-                case "PoisonBreatherCorpse":
-                    result = "PoisonBreather";
-                    break;
-                case "SleepBreatherCorpse":
-                    result = "SleepBreather";
-                    break;
-                case "StunBreatherCorpse":
-                    result = "StunBreather";
-                    break;
-                case "ConfusionBreatherCorpse":
-                    result = "ConfusionBreather";
-                    break;
-                case "Troll Corpse":
-                    result = "Troll";
-                    break;
-                case "Agolzvuv Corpse":
-                    result = "Agolzvuv";
-                    break;
-                case "Bloated Pearlfrog Corpse":
-                    result = "Bloated Pearlfrog";
-                    break;
-                case "Gibbon Corpse":
-                    result = "Cyclopean Gibbon";
-                    break;
-                case "Mimic Corpse":
-                    result = "Mimic";
-                    break;
-                case "Molting Basilisk Husk":
-                    result = "Molting Basilisk";
-                    break;
-                case "Quartz Baboon Corpse":
-                    result = "Quartz Baboon";
-                    break;
-                case "Snailmother Corpse":
-                    result = "Snailmother";
-                    break;
-                case "Urchin Belcher Corpse":
-                    result = "Urchin Belcher";
-                    break;
-                case "Bone Worm Corpse":
-                    result = "Bone Worm";
-                    break;
-                case "Amaranthine Ashes":
-                    result = "Goatfolk Qlippoth";
-                    break;
-                case "Greater Voider Corpse":
-                    result = "Greater Voider";
-                    break;
-                case "Madpole Corpse":
-                    result = "Madpole";
-                    break;
-                case "Ogre ape corpse":
-                    result = "Ogre Ape";
-                    break;
-                case "Rhinox Corpse":
-                    result = "Rhinox";
-                    break;
-                case "BaseElderBreatherCorpse":
-                    result = "BaseElderBreather";
-                    break;
-                case "ElderFireBreatherCorpse":
-                    result = "ElderFireBreather";
-                    break;
-                case "ElderIceBreatherCorpse":
-                    result = "ElderIceBreather";
-                    break;
-                case "ElderCorrosiveBreatherCorpse":
-                    result = "ElderCorrosiveBreather";
-                    break;
-                case "ElderNormalityBreatherCorpse":
-                    result = "ElderNormalityBreather";
-                    break;
-                case "ElderPoisonBreatherCorpse":
-                    result = "ElderPoisonBreather";
-                    break;
-                case "ElderSleepBreatherCorpse":
-                    result = "ElderSleepBreather";
-                    break;
-                case "ElderStunBreatherCorpse":
-                    result = "ElderStunBreather";
-                    break;
-                case "ElderConfusionBreatherCorpse":
-                    result = "ElderConfusionBreather";
-                    break;
-                case "Enigma Snail Corpse":
-                    result = "Enigma Snail";
-                    break;
-                case "Great Saltback Corpse":
-                    result = "Great Saltback";
-                    break;
-                case "Kaleidoslug Corpse":
-                    result = "Kaleidoslug";
-                    break;
-                case "Memory Eater Corpse":
-                    result = "Memory Eater";
-                    break;
-                case "Sultan Croc Corpse":
-                    result = "Sultan Croc";
-                    break;
-                case "Svardym Corpse":
-                    result = "Svardym";
-                    break;
-                case "Saltwurm Corpse":
-                    result = "Saltwurm";
-                    break;
-                case "Unimax Corpse":
-                    result = "Unimax";
-                    break;
-                case "Urshiib Corpse":
-                    result = "Urshiib";
-                    break;
-                case "Dromad Corpse":
-                    result = "Dromad";
-                    break;
-                case "SlogCorpse":
-                    result = "GolgothaSlog";
-                    break;
-                case "Biomech Corpse":
-                    result = "BaseBiomech";
-                    break;
-            }
-
-            return result;
         }
 
         public bool CreateUndead()
@@ -345,18 +153,12 @@ namespace XRL.World.Parts.Mutation
                 return false;
             }
 
-            var blueprint = GetBlueprintFromCorpse(corpse.Blueprint);
-            if (blueprint == "")
-            {
-                Popup.Show($"Failed to determine creature from {corpse}.");
-                return false;
-            }
-
             CooldownMyActivatedAbility(ActivatedAbilityID, 5);
 
-            var go = GameObject.create(blueprint); //GameObject.create("Qudzu");
+            var go = GameObject.create(CorpseDictionary[corpse.Blueprint]);
             if (go.pBrain != null)
             {
+                go.DisplayName = $"Undead {go.DisplayName}";
                 if (ParentObject.IsPlayer())
                     go.IsTrifling = true;
                 go.pBrain.SetFeeling(ParentObject, 100);

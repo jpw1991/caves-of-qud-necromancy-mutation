@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Undead versions of all creatures that can be reanimated -->
+<objects>
+    <object Name="ChebGonaz Undead Templar" Inherits="Templar">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Bat" Inherits="Bat">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Pig" Inherits="Pig">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Boar" Inherits="Boar">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Cave Spider" Inherits="Cave Spider">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Ray Cat" Inherits="Ray Cat">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Croc" Inherits="Croc">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Dog" Inherits="Dog">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Electrofuge" Inherits="Electrofuge">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Giant Beetle" Inherits="Giant Beetle">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Giant Centipede" Inherits="Giant Centipede">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead GiantDragonfly" Inherits="GiantDragonfly">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Glowfish" Inherits="Glowfish">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Goat" Inherits="Goat">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Horned Chameleon" Inherits="Horned Chameleon">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Qudzu" Inherits="Qudzu">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Salamander" Inherits="Salamander">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Scorpiock" Inherits="Scorpiock">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Snapjaw" Inherits="Snapjaw">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Chute Crab" Inherits="Chute Crab">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Eyeless Crab" Inherits="Eyeless Crab">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Feral Lah" Inherits="Feral Lah">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Girshling" Inherits="Girshling">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Glowmoth" Inherits="Glowmoth">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Knollworm" Inherits="Knollworm">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Leech" Inherits="Leech">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Salthopper" Inherits="Salthopper">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Seedsprout Worm" Inherits="Seedsprout Worm">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Worm of the Earth" Inherits="Worm of the Earth">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Naphtaali" Inherits="Naphtaali">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead BaseHindren" Inherits="BaseHindren">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Albino ape" Inherits="Albino ape">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Barkbiter" Inherits="Barkbiter">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Chitinous Puma" Inherits="Chitinous Puma">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Dawnglider" Inherits="Dawnglider">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Equimax" Inherits="Equimax">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Fire ant" Inherits="Fire ant">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Fire Snout" Inherits="Fire Snout">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Ghost Perch" Inherits="Ghost Perch">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Ice frog" Inherits="Ice frog">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Quillipede" Inherits="Quillipede">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Rustacean" Inherits="Rustacean">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Spark Tick" Inherits="Spark Tick">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Voider" Inherits="Voider">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Goatfolk" Inherits="Goatfolk">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Electric Snail" Inherits="Electric Snail">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Eyeless King Crab" Inherits="Eyeless King Crab">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead BaseBreather" Inherits="BaseBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead FireBreather" Inherits="FireBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead IceBreather" Inherits="IceBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead CorrosiveBreather" Inherits="CorrosiveBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead NormalityBreather" Inherits="NormalityBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead PoisonBreather" Inherits="PoisonBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead SleepBreather" Inherits="SleepBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead StunBreather" Inherits="StunBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ConfusionBreather" Inherits="ConfusionBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Troll" Inherits="Troll">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Agolzvuv" Inherits="Agolzvuv">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Bloated Pearlfrog" Inherits="Bloated Pearlfrog">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Cyclopean Gibbon" Inherits="Cyclopean Gibbon">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Mimic" Inherits="Mimic">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Molting Basilisk" Inherits="Molting Basilisk">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Quartz Baboon" Inherits="Quartz Baboon">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Snailmother" Inherits="Snailmother">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Urchin Belcher" Inherits="Urchin Belcher">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Bone Worm" Inherits="Bone Worm">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Goatfolk Qlippoth" Inherits="Goatfolk Qlippoth">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Greater Voider" Inherits="Greater Voider">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Madpole" Inherits="Madpole">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Ogre Ape" Inherits="Ogre Ape">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Rhinox" Inherits="Rhinox">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead BaseElderBreather" Inherits="BaseElderBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderFireBreather" Inherits="ElderFireBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderIceBreather" Inherits="ElderIceBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderCorrosiveBreather" Inherits="ElderCorrosiveBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderNormalityBreather" Inherits="ElderNormalityBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderPoisonBreather" Inherits="ElderPoisonBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderSleepBreather" Inherits="ElderSleepBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderStunBreather" Inherits="ElderStunBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead ElderConfusionBreather" Inherits="ElderConfusionBreather">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Enigma Snail" Inherits="Enigma Snail">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Great Saltback" Inherits="Great Saltback">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Kaleidoslug" Inherits="Kaleidoslug">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Memory Eater" Inherits="Memory Eater">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Sultan Croc" Inherits="Sultan Croc">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Svardym" Inherits="Svardym">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Saltwurm" Inherits="Saltwurm">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Unimax" Inherits="Unimax">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Urshiib" Inherits="Urshiib">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead Dromad" Inherits="Dromad">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead GolgothaSlog" Inherits="GolgothaSlog">
+        <removepart Name="Corpse" />
+    </object>
+    <object Name="ChebGonaz Undead BaseBiomech" Inherits="BaseBiomech">
+        <removepart Name="Corpse" />
+    </object>
+</objects>

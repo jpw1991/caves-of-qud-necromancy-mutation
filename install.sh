@@ -13,4 +13,5 @@ cp -f NecromancyMutation/ChebGonaz_Reanimate.cs "$dest"
 cp -f NecromancyMutation/manifest.json "$dest"
 cp -f NecromancyMutation/preview.png "$dest"
 cp -f NecromancyMutation/workshop.json "$dest"
+cp -f NecromancyMutation/ObjectBlueprints.xml "$dest"
 

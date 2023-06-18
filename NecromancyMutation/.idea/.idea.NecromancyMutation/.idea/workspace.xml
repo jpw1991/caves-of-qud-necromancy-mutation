@@ -6,13 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="45a80f00-e307-4275-b6ea-8ad43e3e31b1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NecromancyMutation/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation.sln" beforeDir="false" afterPath="$PROJECT_DIR$/NecromancyMutation.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Mutations.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/NecromancyMutation.csproj" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Properties/AssemblyInfo.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/Reanimate.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/obj/Debug/.NETFramework,Version=v4.8.AssemblyAttributes.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/NecromancyMutation/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ChebGonaz_Reanimate.cs" beforeDir="false" afterPath="$PROJECT_DIR$/ChebGonaz_Reanimate.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NecromancyMutation.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/NecromancyMutation.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/obj/Debug/NecromancyMutation.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../install.sh" beforeDir="false" afterPath="$PROJECT_DIR$/../install.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,13 +21,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JSON File" />
+        <option value="XML File" />
       </list>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47833486ffa642778bc4434b52ce6c7f923c00/05/6de752d9/Beguiling.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47833486ffa642778bc4434b52ce6c7f923c00/9c/94b241ac/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/47833486ffa642778bc4434b52ce6c7f923c00/c5/bdea532f/SnapjawPack1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/33/d27807bc/Burgeoning.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/e3/07506e55/BaseMutation.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/fc/59b2374c/GameObject.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/e3/07506e55/BaseMutation.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/544bcbfb1d2443d5b00f37f6aa2cc98191da00/fc/59b2374c/GameObject.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2R9IUVuCQRvP368lgnC07R7Ne4o" />
   <component name="ProjectViewState">
@@ -68,6 +69,8 @@
       <workItem from="1686655887226" duration="2791000" />
       <workItem from="1686658911527" duration="1327000" />
       <workItem from="1686833151943" duration="1225000" />
+      <workItem from="1686987637864" duration="7711000" />
+      <workItem from="1687055356447" duration="7808000" />
     </task>
     <servers />
   </component>
