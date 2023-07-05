@@ -64,6 +64,10 @@ Freehold Games/CavesOfQud/Mods
 
  Date | Version | Notes 
 --- | --- | ---
+05/07/2023 | 0.0.6 | Fix exception caused by game update
+22/06/2023 | 0.0.5 | remove ObjectBlueprints.xml and instead use normal creatures but remove the corpse part from them and modify their display name
+18/06/2023 | 0.0.4 | undead added to name of dead creatures
+18/06/2023 | 0.0.3 | custom creatures from corpses that do not drop corpses
 17/06/2023 | 0.0.2 | Fix bug where corpse wasn't consumed after creating the minion
 17/06/2023 | 0.0.1 | Initial release
 

@@ -167,7 +167,7 @@ namespace XRL.World.Parts.Mutation
                 var GO = ParentObject;
                 while (GO.pBrain != null && (GO = GO.pBrain.PartyLeader) != null && GO != ParentObject)
                     go.pBrain.SetFeeling(GO, 100);
-                go.UpdateVisibleStatusColor();
+                //go.UpdateVisibleStatusColor();
 
                 go.MakeActive();
                 if (go.HasStat("XPValue"))
