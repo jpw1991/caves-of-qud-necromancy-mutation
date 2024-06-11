@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
 using System.Linq;
+using System.Globalization;
 using XRL.UI;
 
 namespace XRL.World.Parts.Mutation
@@ -156,17 +156,17 @@ namespace XRL.World.Parts.Mutation
             CooldownMyActivatedAbility(ActivatedAbilityID, 5);
 
             var go = GameObject.create(CorpseDictionary[corpse.Blueprint]);
-            if (go.pBrain != null)
+            if (go.Brain != null)
             {
                 go.RemovePart<Corpse>();
                 go.DisplayName = $"Undead {go.DisplayName}";
                 if (ParentObject.IsPlayer())
                     go.IsTrifling = true;
-                go.pBrain.SetFeeling(ParentObject, 100);
-                go.pBrain.PartyLeader = ParentObject;
+                go.Brain.AdjustFeeling(ParentObject, 100);
+                go.Brain.SetPartyLeader(ParentObject);
                 var GO = ParentObject;
-                while (GO.pBrain != null && (GO = GO.pBrain.PartyLeader) != null && GO != ParentObject)
-                    go.pBrain.SetFeeling(GO, 100);
+                while (GO.Brain != null && (GO = GO.Brain.PartyLeader) != null && GO != ParentObject)
+                    go.Brain.AdjustFeeling(GO, 100);
                 //go.UpdateVisibleStatusColor();
 
                 go.MakeActive();

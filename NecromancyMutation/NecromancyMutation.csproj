@@ -1,61 +1,41 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-    <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+﻿<Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>
-        <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-        <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-        <ProjectGuid>{8CBF3DAB-7D5A-439F-936E-C55129487B28}</ProjectGuid>
-        <OutputType>Library</OutputType>
-        <AppDesignerFolder>Properties</AppDesignerFolder>
+        <!-- If you've cloned/forked this and want to change it, copy the entire file and rename its extension to
+         to csproj.user and then set your own paths. This user file will take precedence over what's set here -->
+
+        <TargetFramework>net48</TargetFramework>
         <RootNamespace>NecromancyMutation</RootNamespace>
-        <AssemblyName>NecromancyMutation</AssemblyName>
-        <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
-        <FileAlignment>512</FileAlignment>
-        <LangVersion>7.3</LangVersion>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>disable</Nullable>
+
+        <Company>Cheb Gonaz</Company>
+        <Product>Cheb's Necromancy Mutation</Product>
+        <NeutralLanguage>en</NeutralLanguage>
+
+        <!-- Assembly Attributes -->
+        <AssemblyTitle>$(Product)</AssemblyTitle>
+        <AssemblyDescription>Adds a mutation called Reanimate that will cause a corpse to get up as an ally.</AssemblyDescription>
+        <AssemblyConfiguration>Release</AssemblyConfiguration>
+        <AssemblyCompany>$(Company)</AssemblyCompany>
+        <AssemblyProduct>$(Product)</AssemblyProduct>
+        <AssemblyCopyright>Copyright © 2022</AssemblyCopyright>
+        <AssemblyCulture>$(NeutralLanguage)</AssemblyCulture>
+
+        <!-- ComVisible and Guid -->
+        <ComVisible>false</ComVisible>
+        <Guid>8CBF3DAB-7D5A-439F-936E-C55129487B28</Guid>
+
+        <!-- Version Information -->
+        <Version>0.0.7.0</Version>
+        <FileVersion>$(Version)</FileVersion>
+        <AssemblyVersion>$(Version)</AssemblyVersion>
+
+        <LangVersion>default</LangVersion>
     </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugSymbols>true</DebugSymbols>
-        <DebugType>full</DebugType>
-        <Optimize>false</Optimize>
-        <OutputPath>bin\Debug\</OutputPath>
-        <DefineConstants>DEBUG;TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
-    <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-        <PlatformTarget>AnyCPU</PlatformTarget>
-        <DebugType>pdbonly</DebugType>
-        <Optimize>true</Optimize>
-        <OutputPath>bin\Release\</OutputPath>
-        <DefineConstants>TRACE</DefineConstants>
-        <ErrorReport>prompt</ErrorReport>
-        <WarningLevel>4</WarningLevel>
-    </PropertyGroup>
+
     <ItemGroup>
         <Reference Include="Assembly-CSharp">
-          <HintPath>..\..\..\.steam\steam\steamapps\common\Caves of Qud\CoQ_Data\Managed\Assembly-CSharp.dll</HintPath>
+            <HintPath>\media\joshua\Storage\Steam\steamapps\common\Caves of Qud\CoQ_Data\Managed\Assembly-CSharp.dll</HintPath>
         </Reference>
-        <Reference Include="System" />
-        <Reference Include="System.Core" />
-        <Reference Include="System.Data" />
-        <Reference Include="System.Xml" />
     </ItemGroup>
-    <ItemGroup>
-        <Compile Include="ChebGonaz_Reanimate.cs" />
-        <Compile Include="Properties\AssemblyInfo.cs" />
-    </ItemGroup>
-    <ItemGroup>
-      <Content Include="manifest.json" />
-      <Content Include="Mutations.xml" />
-    </ItemGroup>
-    <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
-    <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
-         Other similar extension points exist, see Microsoft.Common.targets.
-    <Target Name="BeforeBuild">
-    </Target>
-    <Target Name="AfterBuild">
-    </Target>
-    -->
-
 </Project>
